@@ -10,7 +10,7 @@
 
 - Instructions to configure aws CLI [AWS CLI Configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
 
-![AWS CLI Local](../assets/week0/CLI-configured-local.png)
+![AWS CLI Local](../assets/week0/cli-configured-local.png)
 
 ### AWS CLI Configuration Gitpod
 
@@ -29,7 +29,7 @@ tasks:
       cd $THEIA_WORKSPACE_ROOT
 ```
 
-![AWS CLI gitpod](../assets/week0/CLI-configured-gitpod.png)
+![AWS CLI gitpod](../assets/week0/cli-configured-gitpod.png)
 
 ### AWS Environment Variables
 
@@ -63,7 +63,7 @@ gp env AWS_DEFAULT_REGION=us-east-1
 
 ### AWS CLI Command to Creat a Budget
 
-![AWS CLI budget](../assets/week0/CLI-create-budgets.png)
+![AWS CLI budget](../assets/week0/cli-create-budgets.png)
 
 ### AWS Console Budget Created
 
@@ -73,7 +73,7 @@ gp env AWS_DEFAULT_REGION=us-east-1
 
 ### AWS CLI Command to Creat a SNS
 
-![AWS CLI sns](../assets/week0/CLI-create-sns.png)
+![AWS CLI sns](../assets/week0/cli-create-sns.png)
 
 ### AWS Console SNS Created
 
@@ -83,7 +83,7 @@ gp env AWS_DEFAULT_REGION=us-east-1
 
 ### AWS CLI Command to Creat a Alarm
 
-![AWS CLI sns](../assets/week0/CLI-create-alarm.png)
+![AWS CLI sns](../assets/week0/cli-create-alarm.png)
 
 ### AWS Console Alarm Created
 
