@@ -8,7 +8,7 @@
 
 - Instructions to install o local computer [AWS CLI Install](https://docs.aws.amazon.com/CLI/latest/userguide/getting-started-install.html)
 
-- Instructions to configure aws CLI [AWS CLI Configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
+- Instructions to configure AWS CLI [AWS CLI Configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
 
 ![AWS CLI Local](../assets/week0/cli-configured-local.png)
 
