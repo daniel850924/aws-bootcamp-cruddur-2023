@@ -61,7 +61,7 @@ gp env AWS_DEFAULT_REGION=us-east-1
 
 ## Create Budgets
 
-- AWS CLI Creat a Budget [DOCUMENTATION](https://docs.aws.amazon.com/cli/latest/reference/budgets/create-budget.html)
+- [AWS CLI Creat a Budget](https://docs.aws.amazon.com/cli/latest/reference/budgets/create-budget.html)
 
 ![AWS CLI budget](../assets/week0/cli-create-budgets.png)
 
@@ -71,7 +71,7 @@ gp env AWS_DEFAULT_REGION=us-east-1
 
 ## Create SNS
 
-- AWS CLI Creat a SNS [DOCUMENTATION](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-sns.html)
+- [AWS CLI Creat a SNS](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-sns.html)
 
 ![AWS CLI sns](../assets/week0/cli-create-sns.png)
 
@@ -81,7 +81,7 @@ gp env AWS_DEFAULT_REGION=us-east-1
 
 ## Create Alarm
 
-- AWS CLI Creat a Alarm [DOCUMENTATION](https://docs.aws.amazon.com/cli/latest/reference/iotevents/create-alarm-model.html)
+- [AWS CLI Creat a Alarm](https://docs.aws.amazon.com/cli/latest/reference/iotevents/create-alarm-model.html)
 
 ![AWS CLI sns](../assets/week0/cli-create-alarm.png)
 
