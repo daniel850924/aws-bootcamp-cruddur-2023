@@ -81,7 +81,7 @@ gp env AWS_DEFAULT_REGION=us-east-1
 
 ## Create Alarm
 
-- AWS CLI Creat a Alarm [DOCUMENTATION](https://docs.aws.amazon.com/cli/latest/reference/iotevents/create-alarm-model.html](https://aws.amazon.com/premiumsupport/knowledge-center/cloudwatch-estimatedcharges-alarm/)
+- AWS CLI Creat a Alarm [DOCUMENTATION](https://docs.aws.amazon.com/cli/latest/reference/iotevents/create-alarm-model.html)
 
 ![AWS CLI sns](../assets/week0/cli-create-alarm.png)
 
