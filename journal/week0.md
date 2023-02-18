@@ -61,30 +61,30 @@ gp env AWS_DEFAULT_REGION=us-east-1
 
 ## Create Budgets
 
-### AWS CLI Command to Creat a Budget
+- AWS CLI Creat a Budget [DOCUMENTATION](https://docs.aws.amazon.com/cli/latest/reference/budgets/create-budget.html)
 
 ![AWS CLI budget](../assets/week0/cli-create-budgets.png)
 
-### AWS Console Budget Created
+- AWS Console Budget Created
 
 ![AWS Console Budget](../assets/week0/budgets-aws-console.png)
 
 ## Create SNS
 
-### AWS CLI Command to Creat a SNS
+- AWS CLI Creat a SNS [DOCUMENTATION](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-sns.html)
 
 ![AWS CLI sns](../assets/week0/cli-create-sns.png)
 
-### AWS Console SNS Created
+- AWS Console SNS Created
 
 ![AWS Console SNS](../assets/week0/sns-aws-console.png)
 
 ## Create Alarm
 
-### AWS CLI Command to Creat a Alarm
+- AWS CLI Creat a Alarm [DOCUMENTATION](https://docs.aws.amazon.com/cli/latest/reference/iotevents/create-alarm-model.html)
 
 ![AWS CLI sns](../assets/week0/cli-create-alarm.png)
 
-### AWS Console Alarm Created
+- AWS Console Alarm Created
 
 ![AWS Console SNS](../assets/week0/alarm-aws-console.png)
