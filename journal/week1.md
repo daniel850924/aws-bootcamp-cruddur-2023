@@ -116,7 +116,7 @@ docker compose -f "docker-compose.yml" up -d --build
 docker compose -f "docker-compose.yml" down
 ```
 
-### Document the Notification Endpoint for the OpenAI Document
+## Document the Notification Endpoint for the OpenAI Document
 
 - Add the documentation to openapi-3.0.yml
 
@@ -142,7 +142,7 @@ docker compose -f "docker-compose.yml" down
 
   ![AWS CLI Local](../assets/week1/api-notification-doc.png)
 
-### Write a Flask Backend Endpoint for Notifications
+## Write a Flask Backend Endpoint for Notifications
 
 - Create the notification end point on app.py
 
@@ -190,4 +190,23 @@ class NotificationsActivities:
     return results
 ```
 
--- Test the new endpoint
+- Test the new endpoint
+
+## Write a React Page for Notifications
+
+- Map and import the notifications feed page on App.js
+
+```javascript
+import NotificationsFeedPage from "./pages/NotificationsFeedPage";
+```
+
+```javascript
+{
+  path: "/notification",
+  element: <NotificationsFeedPage />
+}
+```
+
+- Create the NotificationFeedPage.js [NotificationFeedPage](../frontend-react-js/src/pages/NotificationsFeedPage.js)
+
+- Test the notification menu
