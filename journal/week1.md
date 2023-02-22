@@ -140,7 +140,7 @@ docker compose -f "docker-compose.yml" down
 
 - Documetantion generated
 
-  ![AWS CLI Local](../assets/week1/api-notification-doc.png)
+  ![API DOCUMENTATION](../assets/week1/api-notification-doc.png)
 
 ## Write a Flask Backend Endpoint for Notifications
 
@@ -163,6 +163,8 @@ from services.notifications_activities import *
 
 - Test the new endpoint
 
+![NOTIFICATION ENDPOINT](../assets/week1/backend-new-endpoint.png)
+
 ## Write a React Page for Notifications
 
 - Map and import the notifications feed page on App.js
@@ -181,3 +183,5 @@ import NotificationsFeedPage from "./pages/NotificationsFeedPage";
 - Create the NotificationFeedPage.js [NotificationFeedPage](../frontend-react-js/src/pages/NotificationsFeedPage.js)
 
 - Test the notification menu
+
+![NOTIFICATION SCREEN](../assets/week1/notification-screen.png)
