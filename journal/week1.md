@@ -175,7 +175,7 @@ import NotificationsFeedPage from "./pages/NotificationsFeedPage";
 
 ```javascript
 {
-  path: "/notification",
+  path: "/notifications",
   element: <NotificationsFeedPage />
 }
 ```
