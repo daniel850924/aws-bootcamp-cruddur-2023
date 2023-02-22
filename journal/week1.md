@@ -115,3 +115,29 @@ docker compose -f "docker-compose.yml" up -d --build
 ```sh
 docker compose -f "docker-compose.yml" down
 ```
+
+### Document the Notification Endpoint for the OpenAI Document
+
+- Add the documentation to openapi-3.0.yml
+
+```yaml
+/api/activities/notifications:
+  get:
+    description: "Return a feed of activity for all of those that I follow"
+    tags:
+      - activities
+    parameters: []
+    responses:
+      "200":
+        description: Returns an array of activities
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: "#/components/schemas/Activity"
+```
+
+- Documetantion generated
+
+  ![AWS CLI Local](../assets/week1/api-notification-doc.png)
