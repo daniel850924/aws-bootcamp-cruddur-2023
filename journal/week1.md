@@ -185,3 +185,11 @@ import NotificationsFeedPage from "./pages/NotificationsFeedPage";
 - Test the notification menu
 
 ![NOTIFICATION SCREEN](../assets/week1/notification-screen.png)
+
+## Run DynamoDB Local Container and ensure it works
+
+![DYNAMODB](../assets/week1/dynamodb.png)
+
+## Run Postgres Container and ensure it works
+
+![POSTGRES](../assets/week1/postgres.png)
