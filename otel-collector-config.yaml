@@ -13,11 +13,11 @@ processors:
 
 exporters:
   otlp:
-    endpoint: "api.honeycomb.io:443"
+    endpoint: "localhost:443"
     headers:
       "x-honeycomb-team": "${HONEYCOMB_API_KEY}"
   otlp/metrics:
-    endpoint: "api.honeycomb.io:443"
+    endpoint: "localhost:443"
     headers:
       "x-honeycomb-team": "${HONEYCOMB_API_KEY}"
       "x-honeycomb-dataset": "frontend-react-jspw"

@@ -6,7 +6,10 @@ import { BatchSpanProcessor, WebTracerProvider } from '@opentelemetry/sdk-trace-
 import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
 
 const exporter = new OTLPTraceExporter({
-  url: "https://localhost/v1/traces"  
+  url: "https://api.honeycomb.io/v1/traces",
+  headers: {
+    "x-honeycomb-team": `${process.env.REACT_APP_HONEYCOMB_API_KEY}`,
+  },
 });
 const provider = new WebTracerProvider({
   resource: new Resource({
@@ -22,7 +25,7 @@ const tracer = trace.getTracer();
 
 const rootSpan = tracer.startActiveSpan('document_load', span => {
   //start span when navigating to page
-  span.setAttribute('pageUrlwindow', window.location.href);
+  span.setAttribute('pageUrlwindow', window.location.pathname);
   window.onload = (event) => {
     // ... do loading things
     // ... attach timing information

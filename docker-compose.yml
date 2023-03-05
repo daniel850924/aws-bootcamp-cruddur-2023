@@ -21,23 +21,12 @@ services:
   frontend-react-js:
     environment:
       REACT_APP_BACKEND_URL: "https://4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
+      REACT_APP_HONEYCOMB_API_KEY: "${HONEYCOMB_API_KEY}"
     build: ./frontend-react-js
     ports:
       - "3000:3000"
     volumes:
-      - ./frontend-react-js:/frontend-react-js
-  # Collector
-  otel-collector: 
-    image: otel/opentelemetry-collector
-    command: [--config=/etc/otel-collector-config.yaml]
-    volumes:
-      - ./otel-collector-config.yaml:/etc/otel-collector-config.yaml
-    ports:
-      - 1888:1888 # pprof extension
-      - 13133:13133 # health_check extension
-      - 4317:4317 # OTLP gRPC receiver
-      - 4318:4318 # OTLP http receiver
-      - 55679:55679 # zpages extension
+      - ./frontend-react-js:/frontend-react-js  
   dynamodb-local:
     # https://stackoverflow.com/questions/67533058/persist-local-dynamodb-data-in-volumes-lack-permission-unable-to-open-databa
     # We needed to add user:root to get this working.
