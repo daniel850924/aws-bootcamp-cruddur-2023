@@ -1,14 +1,12 @@
-import { OTLPTraceExporter } from '@opentelemetry/exporter-trace-otlp-http';
-import { WebTracerProvider, BatchSpanProcessor } from '@opentelemetry/sdk-trace-web';
+import { trace } from '@opentelemetry/api';
 import { ZoneContextManager } from '@opentelemetry/context-zone';
-import { Resource }  from '@opentelemetry/resources';
+import { OTLPTraceExporter } from '@opentelemetry/exporter-trace-otlp-http';
+import { Resource } from '@opentelemetry/resources';
+import { BatchSpanProcessor, WebTracerProvider } from '@opentelemetry/sdk-trace-web';
 import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
 
 const exporter = new OTLPTraceExporter({
-  url: "https://api.honeycomb.io/v1/traces",
-  headers: {
-    "x-honeycomb-team": "J2KuEMblVYSEafbWSX1EcA",
-  },
+  url: "https://localhost/v1/traces"  
 });
 const provider = new WebTracerProvider({
   resource: new Resource({
@@ -19,8 +17,6 @@ provider.addSpanProcessor(new BatchSpanProcessor(exporter));
 provider.register({
   contextManager: new ZoneContextManager()
 });
-
-import { trace, context, } from '@opentelemetry/api';
 
 const tracer = trace.getTracer();
 
