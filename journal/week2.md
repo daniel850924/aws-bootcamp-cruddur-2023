@@ -2,6 +2,18 @@
 
 ## Required Homework
 
+- [Instrument Honeycomb with OTEL](#instrument-honeycomb-with-otel)
+- [Instrument AWS X-Ray](#instrument-aws-x-ray)
+- [Instrument AWS X-Ray Subsegments](#instrument-aws-x-ray)
+- [Configure custom logger to send to CloudWatch Logs](#configure-custom-logger-to-send-to-cloudwatch-logs)
+- [Integrate Rollbar and capture and error](#integrate-rollbar-for-error-logging)
+
+## Homework Challenges
+
+- [Instrument Honeycomb for the frontend-application to observe network latency between frontend and backend](#instrument-honeycomb-for-the-frontend-application)
+- [Add custom instrumentation to Honeycomb to add more attributes eg. UserId, Add a custom span](#add-custom-instrumentation-to-honeycomb-to-add-more-attributes)
+- [Run custom queries in Honeycomb and save them later eg. Latency by UserID, Recent Traces](#run-custom-queries-in-honeycomb-and-save-them-later)
+
 ## Instrument Honeycomb with OTEL
 
 - Follow the instructions as the documentation [Honeycomb Python Doc](https://docs.honeycomb.io/getting-data-in/opentelemetry/python/)
@@ -13,7 +25,7 @@
 
 - Honeycomb add spans and attributes [Git Commit 0d25a43](https://github.com/daniel850924/aws-bootcamp-cruddur-2023/commit/3d08ed8005fb4f8642a43d62e718ddaeb6a61675)
 
-- Honeycomb [notifications_activities.py](../backend-flask/services/notifications_activities.py) Span/Attributes
+- Honeycomb Span/Attributes
   ![honeycomb span](../assets/week2/honeycomb-span-attributes.png)
 
 - Run queries to explore traces within Honeycomb.io
@@ -54,3 +66,27 @@
 - Trigger an error an observe an error with Rollbar
   ![rollbar](../assets/week2/rollbar.png)
   ![rollbar-erro](../assets/week2/rollbar-error.png)
+
+## Instrument Honeycomb for the frontend-application
+
+- Git Commit with the changes [Git Commit 77ed84a](https://github.com/daniel850924/aws-bootcamp-cruddur-2023/commit/77ed84ac50ff75a8d701a167ce7830b8abda8ee0)
+
+- Follow the instructions as the Honyecomb documentation [Honeycomb JavaScript Doc](https://docs.honeycomb.io/getting-data-in/opentelemetry/browser-js/)
+- Follow the instructions as the Open Telemetry documentation [Open Telemetry](https://opentelemetry.io/docs/collector/getting-started/)
+
+- The [tracing.js](../frontend-react-js/src/tracing.js) file is imported on the [index.js](../frontend-react-js/src/index.js) them every page in the frontend is now monitored.
+- In Honeycomb you can identify the page through the new attribute pageUrlwindow.
+- Define the Collector in [docker-compose.yml](../docker-compose.yml)
+
+## Add custom instrumentation to Honeycomb to add more attributes
+
+- Added document_load span and the attribute pageUrlwindow
+  ![Honeycomb-new-span-attributes](../assets/week2/Honeycomb-new-span-attributes.png)
+
+## Run custom queries in Honeycomb and save them later
+
+- Created custom query Notification_Latency and saved it on the board. This query searches in the last two hours for requests on the notification page and shows the time spend to load the page.
+  ![Honeycomb-custom-queries-Honeycomb](../assets/week2/Honeycomb-custom-queries-Honeycomb.png)
+
+- Running Notification_Latency custom query
+  ![Honeycomb-running-custom-queries](../assets/week2/Honeycomb-running-custom-queries.png)
