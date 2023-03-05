@@ -69,7 +69,7 @@
 
 ## Instrument Honeycomb for the frontend-application
 
-- Git Commit with the changes [Git Commit 77ed84a](https://github.com/daniel850924/aws-bootcamp-cruddur-2023/commit/77ed84ac50ff75a8d701a167ce7830b8abda8ee0)
+- Git Commit with the changes [77ed84a](https://github.com/daniel850924/aws-bootcamp-cruddur-2023/commit/77ed84ac50ff75a8d701a167ce7830b8abda8ee0) [92b263b](https://github.com/daniel850924/aws-bootcamp-cruddur-2023/commit/92b263bef3f641ea0ebacf73f6557e8d852e08fc) [f0f9755](https://github.com/daniel850924/aws-bootcamp-cruddur-2023/commit/f0f9755db7a92cd493340f1194ad03325dfb1339#diff-8273684ee2a8132d45715f784b672a8f2d7ae85a81d5cb344c91d1fcd0aac81b)
 
 - Follow the instructions as the Honyecomb documentation [Honeycomb JavaScript Doc](https://docs.honeycomb.io/getting-data-in/opentelemetry/browser-js/)
 - Follow the instructions as the Open Telemetry documentation [Open Telemetry](https://opentelemetry.io/docs/collector/getting-started/)
