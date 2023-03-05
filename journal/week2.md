@@ -76,7 +76,6 @@
 
 - The [tracing.js](../frontend-react-js/src/tracing.js) file is imported on the [index.js](../frontend-react-js/src/index.js) them every page in the frontend is now monitored.
 - In Honeycomb you can identify the page through the new attribute pageUrlwindow.
-- Define the Collector in [docker-compose.yml](../docker-compose.yml)
 
 ## Add custom instrumentation to Honeycomb to add more attributes
 
